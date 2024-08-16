@@ -54,7 +54,7 @@ namespace ProjectBase
                 FieldInfo[] infos = classType.GetFields();
 
                 //开始读取具体每一行的信息
-                for(int i = 0; i < infos.Length; i++)
+                for(int i = 0; i < rowCount; i++)
                 {
                     object classObj = Activator.CreateInstance(classType);
                     foreach(FieldInfo info in infos)
